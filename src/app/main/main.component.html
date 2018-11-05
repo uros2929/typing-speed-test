@@ -2,30 +2,30 @@
     <br>
     <br>
     <br>
-  <form action="?" method="POST" id="formInfo">
-      <label for="name">Name: </label>
-      <input type="text" name="name" #name>
-      <label for="time">Time: </label>
-      <input type="text" name="time" value="60" #time>
-      <label for="mistakes">Mistakes: </label>
-      <input type="number" name="mistakes" value="0" #mistakes >
-  </form>
+    <form action="?" method="POST" id="formInfo">
+        <label for="name">Name: </label>
+        <input type="text" name="name" #name>
+        <label for="time">Time: </label>
+        <input type="text" name="time" value="60" #time>
+        <label for="mistakes">Mistakes: </label>
+        <input type="number" name="mistakes" value="0" #mistakes>
+    </form>
 
-  <div class="language">
-    <select name="language" id="" #selectList>
-        <option value="selectLanguage">Select Language</option>
-        <option value="english">English</option>
-        <option value="serbian">Serbian</option>
-    </select>
-  </div>
-  <div class="words">
-  <button class="start" (click)="startTyping(selectList)">Start typing</button>
-  <br>
-  <textarea name="words" id="showWords" cols="50" rows="10" #showWords></textarea>
-  <br>
-  <input type="text" name="typing" placeholder="TYPE HERE. . ." id="typedWords" #typedWords (keyup)="checkTypingMistakes()">
-</div>
-<div class="typing">
+    <div class="language">
+        <select name="language" id="" #selectList>
+            <option value="selectLanguage">Select Language</option>
+            <option value="english">English</option>
+            <option value="serbian">Serbian</option>
+        </select>
+    </div>
+    <div class="words">
+        <button class="start" (click)="startTyping(selectList)">Start typing</button>
+        <br>
+        <textarea name="words" id="showWords" cols="50" rows="10" #showWords></textarea>
+        <br>
+        <input type="text" name="typing" placeholder="TYPE HERE. . ." id="typedWords" #typedWords (keyup)="checkTypingMistakes()">
+    </div>
+    <div class="typing">
 
-</div>
+    </div>
 </main>
