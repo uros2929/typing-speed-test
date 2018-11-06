@@ -1,3 +1,16 @@
 <aside>
-  <h3>RESULTS</h3>
+  <h3>RESULTS HISTORY:</h3>
+  <ul>
+    <li *ngFor="let res of results" (click)="showResults($event)" id="{{res}}">
+        {{res}}
+    </li>
+  </ul>
+  <div id="showResults">
+    <button (click)="exitShowResults()">x</button>
+    <h3>Name:{{name}}</h3>
+    <h3>Words:{{words}}</h3>
+    <h3>Total time:{{totalTime}}</h3>
+    <h3>Speed:{{speed}}</h3>
+    <h3>Mistakes:{{mistakes}}</h3>
+  </div>
 </aside>

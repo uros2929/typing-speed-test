@@ -1,5 +1,23 @@
 aside{
-    width: 100%;
-    min-height: 650px;
+   position: relative;
+   float: left;
+   margin-left: 48%;
+    width: 50%;
+    min-height: 450px;
     color: white;
+}
+#showResults{
+    display: none;
+    border: solid 2px blue;
+    position: absolute;
+    right: 65%;
+    top: 0;
+    width: 60%;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(99,99,99);
+    button{
+        position: relative;
+        float: right;
+    }
 }

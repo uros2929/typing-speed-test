@@ -1,8 +1,7 @@
 main{
     width:100%;
-    border: solid 2px black;
     border-top: none;
-    min-height: 650px;
+    min-height: 550px;
 }
 form{
     width: 100%;
@@ -39,4 +38,10 @@ form{
         width: 30%;
         text-align: center;
     }
+}
+.mistakesDiv{
+    width: 100%;
+    display: table;
+    text-align: center;
+    color:deeppink;
 }

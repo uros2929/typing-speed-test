@@ -25,7 +25,12 @@
         <br>
         <input type="text" name="typing" placeholder="TYPE HERE. . ." id="typedWords" #typedWords (keyup)="checkTypingMistakes()">
     </div>
-    <div class="typing">
-
+    <div class="mistakesDiv">
+        <h3>Mistakes:</h3>
+        <ul>
+            <li *ngFor="let greske of greskeNiz" style="list-style: decimal;">
+                {{greske}}
+            </li>
+        </ul>
     </div>
 </main>
