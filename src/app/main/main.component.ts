@@ -18,7 +18,7 @@ export class MainComponent implements OnInit {
   greskeNiz=[];
   words = {
     english: ["if you can correctly and quickly type this perplexing sentence you are one superb typist"],
-    serbian: ["Oj Kosovo Kosovo"]
+    serbian: ["Jesen u mom sokaku lisce pada na sve strane ona stoji na prozoru sama ceka mene dok ne svane dan"]
   }
   constructor() { }
 
@@ -47,6 +47,7 @@ export class MainComponent implements OnInit {
         if (this.showWords.nativeElement.value === this.typedWords.nativeElement.value) {
           clearInterval(interval);
           this.results();
+          location.reload();
         }
         if (timeCount === 0 || this.showWords.nativeElement.value.length == this.typedWords.nativeElement.value.length) {
           clearInterval(interval);
