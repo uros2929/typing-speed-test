@@ -1,4 +1,4 @@
-##Online [DEMO](https://uros2929.github.io/typing-speed-test/) version
+## Online [DEMO](https://uros2929.github.io/typing-speed-test/) version
 
 # TypingSpeedTestByUM
 
