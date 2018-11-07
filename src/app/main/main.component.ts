@@ -37,7 +37,7 @@ export class MainComponent implements OnInit {
     this.timeChecker()
     let start = new Date();
     this.startTime = start.getTime();
-
+    this.typedWords.nativeElement.focus();
   }
   timeChecker() {
     let timeCount = this.time.nativeElement.value,
